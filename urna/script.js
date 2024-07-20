@@ -77,7 +77,15 @@ const clicou = (keyboard) => {
 
 };
 
-const branco = () => { };
+const branco = () => {
+  if (numero === '') {
+    votoBranco = true;
+    seuVotoPara.style.display = "block";
+    aviso.style.display = "block";
+    numeros.innerHTML = "";
+    descricao.innerHTML = "<div class='aviso-grande pisca'>VOTO EM BRANCO</div>";
+  }
+};
 
 const corrige = () => {
   iniciarEtapa();
