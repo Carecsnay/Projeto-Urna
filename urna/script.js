@@ -75,7 +75,6 @@ const clicou = (keyboard) => {
       atualizarInterface();
     }
   }
-
 };
 
 const branco = () => {
@@ -92,5 +91,12 @@ const corrige = () => {
   iniciarEtapa();
 };
 
-const confirma = () => { };
+const confirma = () => {
+  if (votoBranco === true) {
+    alert("Confirmação de voto em branco");
+  } else if (numero.length === etapas[etapaAtual].numeros) {
+    alert("Confirmado como: " + numero);
+  }
+
+}
 iniciarEtapa();
