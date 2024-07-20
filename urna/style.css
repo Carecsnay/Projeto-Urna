@@ -110,7 +110,6 @@ body {
 }
 
 .d-1-left {
-  padding: 0 0 0 25px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -122,14 +121,14 @@ body {
   height: 50px;
   display: flex;
   align-items: center;
-}
-
-.d-1-2 {
   justify-content: center;
   font-weight: bold;
 }
 
+.d-1-1,
 .d-1-3 {
+  padding-left: 25px;
+  justify-content: left;
 }
 
 .numero {
@@ -154,6 +153,7 @@ body {
   flex: 1;
   align-items: center;
   line-height: 30px;
+  padding: 0 0 0 25px;
 }
 
 .d-1-right {
