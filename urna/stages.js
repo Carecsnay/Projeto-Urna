@@ -7,13 +7,13 @@ let etapas = [
         numero: "12345",
         nome: "Ze Taxão",
         partido: "PCC",
-        fotos: [{ url: "c02.jpeg", legenda: "Vereador" }],
+        fotos: [{ url: "c02.jpg", legenda: "Vereadora" }],
       },
       {
         numero: "54321",
         nome: "Ze Milicia",
         partido: "Miliciano",
-        fotos: [{ url: "c04.jpeg", legenda: "Vereador" }],
+        fotos: [{ url: "c04.jpg", legenda: "Vereador" }],
       },
     ],
   },
@@ -27,8 +27,8 @@ let etapas = [
         partido: "Taxação",
         vice: "Ze Taxão",
         fotos: [
-          { url: "c01.jpeg", legenda: "Prefeito" },
-          { url: "c02.jpeg", legenda: "Vice-Prefeito", small: true },
+          { url: "c01.jpg", legenda: "Prefeito" },
+          { url: "c02.jpg", legenda: "Vice-Prefeito", small: true },
         ],
       },
       {
@@ -37,8 +37,8 @@ let etapas = [
         partido: "Joia",
         vice: "Ze Milicia",
         fotos: [
-          { url: "c03.jpeg", legenda: "Prefeito" },
-          { url: "c04.jpeg", legenda: "Vice-Prefeito", small: true },
+          { url: "c03.jpg", legenda: "Prefeito" },
+          { url: "c04.jpg", legenda: "Vice-Prefeito", small: true },
         ],
       },
     ],

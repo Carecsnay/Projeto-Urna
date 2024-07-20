@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 
   font-family: sans-serif;
   margin: 20px;
@@ -164,6 +165,7 @@ body {
 }
 
 .d-1-image {
+  margin: 10px 10px 0 0;
   border: 1px solid black;
   background-color: #fff;
   text-align: center;
@@ -175,6 +177,8 @@ body {
 }
 
 .d-1-image.small {
+  margin: 5px 10px 0 0;
+
   width: 80%;
   font-size: 12px;
 }
@@ -198,4 +202,11 @@ body {
   background-color: #f87000;
   padding: 0px 2px;
   color: white;
+}
+
+.aviso-grande {
+  font-weight: bold;
+  font-size: 36px;
+  background-color: #c1c1c1;
+  padding: 16px;
 }
