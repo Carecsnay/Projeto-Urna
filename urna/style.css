@@ -3,6 +3,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-family: sans-serif;
 }
 
 .urna {
@@ -20,4 +22,67 @@ body {
 .teclado {
   background-color: #403a3a;
   margin-left: 30px;
+}
+
+.teclado--linha {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.teclado--botao {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  width: 80px;
+  height: 55px;
+  background-color: black;
+
+  margin: 3px;
+  color: white;
+  font-size: 25px;
+
+  cursor: pointer;
+  box-shadow: 2px 2px 0px #555;
+}
+
+.teclado--botao:hover {
+  background-color: #e5e5e5;
+  color: black;
+}
+
+.botao--branco,
+.botao--corrige,
+.botao--confirma {
+  padding: 0 3px;
+  justify-content: center;
+  color: black;
+  background-color: #ccc;
+  font-weight: bolder;
+  font-size: 13px;
+  height: 40px;
+}
+
+.botao--corrige {
+  background-color: #f87000;
+}
+
+.botao--confirma {
+  background-color: #0da10d;
+  width: 80px;
+  height: 50px;
+}
+
+.teclado--botao.botao--confirma:hover {
+  background-color: greenyellow;
+  color: black;
+}
+
+.teclado--botao.botao--corrige:hover {
+  background-color: orange;
+  color: black;
+}
+
+.teclado--botao.botao--branco:hover {
+  background-color: white;
+  color: black;
 }
