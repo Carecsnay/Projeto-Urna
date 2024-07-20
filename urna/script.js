@@ -17,6 +17,7 @@ let votoBranco = false;
 const iniciarEtapa = () => {
   let etapa = etapas[etapaAtual];
   let numeroHTML = "";
+  numero = "";
 
   for (let i = 0; i < etapa.numeros; i++) {
     if (i === 0) {
