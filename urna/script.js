@@ -79,7 +79,9 @@ const clicou = (keyboard) => {
 
 const branco = () => { };
 
-const corrige = () => { };
+const corrige = () => {
+  iniciarEtapa();
+};
 
 const confirma = () => { };
 iniciarEtapa();
