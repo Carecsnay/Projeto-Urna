@@ -2,6 +2,15 @@
 
 Este é um projeto de uma urna eletrônica simulada, desenvolvido para praticar habilidades em HTML e CSS. O objetivo é simular o processo de votação em uma urna eletrônica, permitindo que o usuário vote para um cargo de vereador.
 
+# Imagens do projeto
+
+![Imagem 01](.github\screencapture-127-0-0-1-5500-2024-07-20-16_18_58.png)
+![Imagem 02](.github\screencapture-127-0-0-1-5500-2024-07-20-16_19_12.png)
+![Imagem 03](.github\screencapture-127-0-0-1-5500-2024-07-20-16_19_23.png)
+![Imagem 04](.github\screencapture-127-0-0-1-5500-2024-07-20-16_19_31.png)
+![Imagem 05](.github\screencapture-127-0-0-1-5500-2024-07-20-16_19_36.png)
+![Imagem 06](.github\screencapture-127-0-0-1-5500-2024-07-20-16_19_40.png)
+
 ## Recursos
 
 - Tela de votação que exibe informações sobre o candidato e o partido.
