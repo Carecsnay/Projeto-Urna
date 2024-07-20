@@ -13,6 +13,7 @@ let numeros = qs(".d-1-3");
 let etapaAtual = 0;
 let numero = "";
 let votoBranco = false;
+let votoContabilizado = false;
 
 const iniciarEtapa = () => {
   let etapa = etapas[etapaAtual];
@@ -51,7 +52,12 @@ const atualizarInterface = () => {
     aviso.style.display = "block";
     let fotosHtml = '';
     for (let i in candidato.fotos) {
-      fotosHtml += `<div class="d-1-image"> <img src="./images/${candidato.fotos[i].url}" alt="Candidato 01">${candidato.fotos[i].legenda}</div>`
+      if (candidato.fotos[i].small) {
+        fotosHtml += `<div class="d-1-image small"> <img src="./images/${candidato.fotos[i].url}" alt="${candidato.fotos[i].legenda}">${candidato.fotos[i].legenda}</div>`
+
+      } else {
+        fotosHtml += `<div class="d-1-image"> <img src="./images/${candidato.fotos[i].url}" alt="${candidato.fotos[i].legenda}">${candidato.fotos[i].legenda}</div>`
+      }
     }
     lateral.innerHTML = fotosHtml;
   } else {
@@ -88,15 +94,31 @@ const branco = () => {
 };
 
 const corrige = () => {
-  iniciarEtapa();
+  if (votoContabilizado === false) {
+    iniciarEtapa();
+  }
 };
 
 const confirma = () => {
+  let etapa = etapas[etapaAtual]
+
   if (votoBranco === true) {
     alert("Confirmação de voto em branco");
-  } else if (numero.length === etapas[etapaAtual].numeros) {
+  } else if (numero.length === etapa.numeros) {
     alert("Confirmado como: " + numero);
   }
-
+  votoContabilizado = true;
+  if (votoContabilizado) {
+    etapaAtual++;
+    votoContabilizado = false;
+    if (etapas[etapaAtual] !== undefined) {
+      iniciarEtapa();
+    } else {
+      etapaAtual = 0;
+      votoBranco = false;
+      votoContabilizado = false;
+      iniciarEtapa();
+    }
+  }
 }
 iniciarEtapa();

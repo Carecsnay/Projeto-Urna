@@ -5,14 +5,14 @@ let etapas = [
     candidatos: [
       {
         numero: "12345",
-        nome: "Ze Taxão",
-        partido: "PCC",
+        nome: "Tonha Chicote",
+        partido: "Partido da Mulher Brasileira (PMB)",
         fotos: [{ url: "c02.jpg", legenda: "Vereadora" }],
       },
       {
         numero: "54321",
-        nome: "Ze Milicia",
-        partido: "Miliciano",
+        nome: "Dr. Chicão",
+        partido: "Partido da Esperança do Brasil (PEB)",
         fotos: [{ url: "c04.jpg", legenda: "Vereador" }],
       },
     ],
@@ -23,9 +23,9 @@ let etapas = [
     candidatos: [
       {
         numero: "13",
-        nome: "Taxa do amor",
-        partido: "Taxação",
-        vice: "Ze Taxão",
+        nome: "Batatinha",
+        partido: "Partido do Cão Fiel",
+        vice: "Dr. Chicão",
         fotos: [
           { url: "c01.jpg", legenda: "Prefeito" },
           { url: "c02.jpg", legenda: "Vice-Prefeito", small: true },
@@ -33,14 +33,14 @@ let etapas = [
       },
       {
         numero: "17",
-        nome: "Arminha",
-        partido: "Joia",
-        vice: "Ze Milicia",
+        nome: "Pé de Chumbo",
+        partido: "Partido Pirata",
+        vice: "Tonha Chicote",
         fotos: [
           { url: "c03.jpg", legenda: "Prefeito" },
           { url: "c04.jpg", legenda: "Vice-Prefeito", small: true },
         ],
       },
     ],
-  },
+  }
 ];
